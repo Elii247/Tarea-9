@@ -12,9 +12,10 @@ public class Main {
         ExecutorService executor = Executors.newCachedThreadPool();
         String password;
 
-        System.out.println("\nIngrese Contraseña a validar con las siguientes caracteristicas: " +
-                "\n8 Caracteres mínimo\n15 Caracteres máximo" +
-                "\nUtilizar mayúsculas, minúsculas, números y caracteres especiales\n");
+        System.out.println("\n-Ingrese Contraseña a validar con las siguientes caracteristicas: " +
+                "\n-8 Caracteres mínimo\n-15 Caracteres máximo" +
+                "\n-Utilizar mayúsculas, minúsculas, números y caracteres especiales\n" +
+                "-Escriba Salir para terminar la verificacion. ");
         while (true) {
             password = scanner.nextLine();
             if (password.equalsIgnoreCase("Salir")) {
